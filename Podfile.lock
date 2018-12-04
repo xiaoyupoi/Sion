@@ -1,0 +1,94 @@
+PODS:
+  - Alamofire (4.7.1)
+  - Differentiator (3.0.2)
+  - HandyJSON (4.1.0)
+  - Hyphenate (3.4.2)
+  - IQKeyboardManagerSwift (5.0.8)
+  - JPVideoPlayer (3.1.1)
+  - Kingfisher (4.7.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.3)
+  - Moya/Core (11.0.2):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.2):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - NSObject+Rx (4.3.0):
+    - RxSwift (~> 4.0)
+  - PCLBlurEffectAlert (2.1.1)
+  - QuickLayout (2.0.2)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Result (3.2.4)
+  - Reusable (4.0.2):
+    - Reusable/Storyboard (= 4.0.2)
+    - Reusable/View (= 4.0.2)
+  - Reusable/Storyboard (4.0.2)
+  - Reusable/View (4.0.2)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SnapKit (4.0.0)
+  - SwiftEntryKit (0.4.2):
+    - QuickLayout (= 2.0.2)
+  - SwiftyJSON (4.0.0)
+
+DEPENDENCIES:
+  - HandyJSON (~> 4.1.0)
+  - Hyphenate (~> 3.4.2)
+  - IQKeyboardManagerSwift (~> 5.0.8)
+  - JPVideoPlayer (~> 3.1.1)
+  - Kingfisher (~> 4.7.0)
+  - MBProgressHUD (~> 1.1.0)
+  - MJRefresh (~> 3.1.15.3)
+  - Moya/RxSwift (~> 11.0.2)
+  - NSObject+Rx (~> 4.3.0)
+  - PCLBlurEffectAlert (~> 2.1.1)
+  - R.swift (~> 4.0.0)
+  - Reusable (~> 4.0.2)
+  - RxCocoa (~> 4.1.2)
+  - RxDataSources (~> 3.0.2)
+  - RxSwift (~> 4.1.2)
+  - SDWebImage (~> 4.4.1)
+  - SnapKit (~> 4.0.0)
+  - SwiftEntryKit (~> 0.4.2)
+  - SwiftyJSON (~> 4.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  HandyJSON: 39d9a8274b8d9c34c7f12354b2f88d33f1c0812d
+  Hyphenate: 25e6dc90d5171a5bf77a92fa11a7638db85575d0
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  JPVideoPlayer: 234c2fc5c9dfd67b969a5dd8233815eb872472c6
+  Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  Moya: a725035953bc1c0eb1be505ab903984501d82440
+  NSObject+Rx: 9a5eeff5e08156f849fa973514456f28eef08742
+  PCLBlurEffectAlert: 9671c027e17e9b054ed372fbecded167ea46daf9
+  QuickLayout: a730730b646b231fd4ef7cffaeb1e81fe0e1ca92
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftEntryKit: f6c478d5e6016c255b5f7a8a2cc67c5594e97273
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+
+PODFILE CHECKSUM: 6dc1ef9c1ef25cb64a52d3847d7652416aac0d30
+
+COCOAPODS: 1.4.0
