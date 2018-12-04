@@ -14,3 +14,4 @@ xcuserdata
 DerivedData
 *.xcuserstate
 pod/
+xcschememanagement.plist
