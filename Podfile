@@ -6,13 +6,13 @@ target 'Sion' do
   use_frameworks!
 pod 'Moya/RxSwift', '~> 11.0.2'
 pod 'SwiftyJSON', '~> 4.0.0'
-pod 'HandyJSON', '~> 4.1.0'
+pod 'HandyJSON', '~> 4.2.1'
 pod 'RxSwift', '~> 4.1.2'
 pod 'RxCocoa', '~> 4.1.2'
 pod 'RxDataSources', '~> 3.0.2'
 pod 'SnapKit', '~> 4.0.0'
 pod 'IQKeyboardManagerSwift', '~> 5.0.8'
-pod 'PCLBlurEffectAlert', '~> 2.1.1' #弹窗
+#pod 'PCLBlurEffectAlert', '~> 2.1.1' #弹窗
 pod 'NSObject+Rx', '~> 4.3.0'
 pod 'Reusable', '~> 4.0.2'
 pod 'Kingfisher', '~> 4.7.0'
@@ -24,6 +24,7 @@ pod 'MBProgressHUD', '~> 1.1.0'
 pod 'JPVideoPlayer', '~> 3.1.1'
 pod 'R.swift', '~> 4.0.0'
 pod 'IGListKit', '~> 3.4.0'
+pod 'PromiseKit', '~> 6.0'
 #pod 'EZPlayer', '~> 1.0.0'
   # Pods for Sion
 
