@@ -22,8 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds);
         window?.backgroundColor = UIColor.white;
         window?.rootViewController = MyTabBarViewController();
-        //    window?.rootViewController = UINavigationController(rootViewController:MyNavigationViewController());
+//        window?.rootViewController = UINavigationController(rootViewController:MyNavigationViewController());
         window?.makeKeyAndVisible();
+        
+        /*
+        let nav = UINavigationController.init(rootViewController: IJKDemoMainViewController())
+        window?.rootViewController = nav
+        window?.makeKeyAndVisible();
+        */
         /// 初始化IQKeyBoard
         IQKeyboardManager.sharedManager().enable = true
         //控制点击背景是否收起键盘

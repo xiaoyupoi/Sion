@@ -168,7 +168,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 5 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 10 nibs.
   struct nib {
     /// Nib `EZPlayerAudibleLegibleViewController`.
     static let ezPlayerAudibleLegibleViewController = _R.nib._EZPlayerAudibleLegibleViewController()
@@ -178,6 +178,16 @@ struct R: Rswift.Validatable {
     static let ezPlayerFloatContainerRootViewController = _R.nib._EZPlayerFloatContainerRootViewController()
     /// Nib `EZPlayerFloatView`.
     static let ezPlayerFloatView = _R.nib._EZPlayerFloatView()
+    /// Nib `IJKDemoInputURLViewController`.
+    static let ijkDemoInputURLViewController = _R.nib._IJKDemoInputURLViewController()
+    /// Nib `IJKDemoMainViewController`.
+    static let ijkDemoMainViewController = _R.nib._IJKDemoMainViewController()
+    /// Nib `IJKDemoSampleViewController`.
+    static let ijkDemoSampleViewController = _R.nib._IJKDemoSampleViewController()
+    /// Nib `IJKMoviePlayerViewController`.
+    static let ijkMoviePlayerViewController = _R.nib._IJKMoviePlayerViewController()
+    /// Nib `IJKQRCodeScanViewController`.
+    static let ijkqrCodeScanViewController = _R.nib._IJKQRCodeScanViewController()
     /// Nib `View`.
     static let view = _R.nib._View()
     
@@ -199,6 +209,31 @@ struct R: Rswift.Validatable {
     /// `UINib(name: "EZPlayerFloatView", in: bundle)`
     static func ezPlayerFloatView(_: Void = ()) -> UIKit.UINib {
       return UIKit.UINib(resource: R.nib.ezPlayerFloatView)
+    }
+    
+    /// `UINib(name: "IJKDemoInputURLViewController", in: bundle)`
+    static func ijkDemoInputURLViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.ijkDemoInputURLViewController)
+    }
+    
+    /// `UINib(name: "IJKDemoMainViewController", in: bundle)`
+    static func ijkDemoMainViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.ijkDemoMainViewController)
+    }
+    
+    /// `UINib(name: "IJKDemoSampleViewController", in: bundle)`
+    static func ijkDemoSampleViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.ijkDemoSampleViewController)
+    }
+    
+    /// `UINib(name: "IJKMoviePlayerViewController", in: bundle)`
+    static func ijkMoviePlayerViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.ijkMoviePlayerViewController)
+    }
+    
+    /// `UINib(name: "IJKQRCodeScanViewController", in: bundle)`
+    static func ijkqrCodeScanViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.ijkqrCodeScanViewController)
     }
     
     /// `UINib(name: "View", in: bundle)`
@@ -264,8 +299,9 @@ struct _R: Rswift.Validatable {
   
   struct nib: Rswift.Validatable {
     static func validate() throws {
-      try _EZPlayerFloatView.validate()
+      try _IJKMoviePlayerViewController.validate()
       try _EZPlayerControlView.validate()
+      try _EZPlayerFloatView.validate()
     }
     
     struct _EZPlayerAudibleLegibleViewController: Rswift.NibResourceType {
@@ -318,6 +354,75 @@ struct _R: Rswift.Validatable {
       
       static func validate() throws {
         if UIKit.UIImage(named: "btn_float_close20x20", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'btn_float_close20x20' is used in nib 'EZPlayerFloatView', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _IJKDemoInputURLViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "IJKDemoInputURLViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _IJKDemoMainViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "IJKDemoMainViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _IJKDemoSampleViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "IJKDemoSampleViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _IJKMoviePlayerViewController: Rswift.NibResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "IJKMoviePlayerViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      func secondView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> IJKMediaControl? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[1] as? IJKMediaControl
+      }
+      
+      func thirdView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[2] as? UIKit.UIView
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "btn_player_pause.png", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'btn_player_pause.png' is used in nib 'IJKMoviePlayerViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "player_bottom_control_bg.png", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'player_bottom_control_bg.png' is used in nib 'IJKMoviePlayerViewController', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "btn_player_play.png", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'btn_player_play.png' is used in nib 'IJKMoviePlayerViewController', but couldn't be loaded.") }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _IJKQRCodeScanViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "IJKQRCodeScanViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
       }
       
       fileprivate init() {}

@@ -10,25 +10,13 @@ import Foundation
 import RxSwift
 
 //生成tableView歌曲列表数据源
-class MusicListViewModel: NSObject {
-  let data = Observable.just([
-    Music(name: "届不到", singer: "雪莱"),
-    Music(name: "深爱", singer: "水树奈奈"),
-    Music(name: "绿光", singer: "孙燕姿"),
-    Music(name: "化身孤岛的鲸", singer: "司夏_西国海妖"),
-    Music(name: "化鹤归", singer: "司夏_西国海妖"),
-    Music(name: "流云辞", singer: "司夏_西国海妖"),
-    Music(name: "届不到", singer: "雪莱"),
-    Music(name: "深爱", singer: "水树奈奈"),
-    Music(name: "绿光", singer: "孙燕姿"),
-    Music(name: "化身孤岛的鲸", singer: "司夏_西国海妖"),
-    Music(name: "化鹤归", singer: "司夏_西国海妖"),
-    Music(name: "流云辞", singer: "司夏_西国海妖"),
-    Music(name: "届不到", singer: "雪莱"),
-    Music(name: "深爱", singer: "水树奈奈"),
-    Music(name: "绿光", singer: "孙燕姿"),
-    Music(name: "化身孤岛的鲸", singer: "司夏_西国海妖"),
-    Music(name: "化鹤归", singer: "司夏_西国海妖"),
-    Music(name: "流云辞", singer: "司夏_西国海妖"),
-    ])
+struct MusicListViewModel {
+    let data = Observable.just([
+        Music(name: "届不到", singer: "雪莱"),
+        Music(name: "深爱", singer: "水树奈奈"),
+        Music(name: "绿光", singer: "孙燕姿"),
+        Music(name: "化身孤岛的鲸", singer: "司夏_西国海妖"),
+        Music(name: "化鹤归", singer: "司夏_西国海妖"),
+        Music(name: "流云辞", singer: "司夏_西国海妖"),
+        ])
 }

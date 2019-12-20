@@ -76,11 +76,39 @@ class ExampleIntEventProvider: RxEventProvider<Int> {
 
 class OneViewController: RootViewController {
     
+    var iPlayer:IJKFFMoviePlayerController?
+    var delegatePlayer:IJKMediaPlayback?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        id<IJKMediaPlayback> playback = [[IJKFFMoviePlayerController alloc] initWithContentURL:nil  withOptions:nil];
+//
+//        [playback shutdown];
+        let video = "http://aliyaoapp.oss-cn-hangzhou.aliyuncs.com/videos/001/out.m3u8"//"http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4"//
+        let options:IJKFFOptions = IJKFFOptions.byDefault()
+        let url:URL = URL.init(string: video)!
+        
+        
+        self.iPlayer = IJKFFMoviePlayerController.init(contentURL: url, with: options)
+        var arm1 = UIViewAutoresizing.init(rawValue: 0)
+        arm1.insert(UIViewAutoresizing.flexibleWidth)
+        arm1.insert(UIViewAutoresizing.flexibleHeight)
+        self.iPlayer?.view.autoresizingMask = arm1
+        self.iPlayer?.view.backgroundColor = UIColor.white
+        self.iPlayer?.view.frame = CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 300)
+        self.iPlayer?.scalingMode = .aspectFit
+        self.iPlayer?.shouldAutoplay = true
+        self.delegatePlayer = self.iPlayer
+        self.view.autoresizesSubviews = true
+        self.view.addSubview((self.iPlayer?.view)!)
+        
+        
+        let dic = ["key1":"A","key2":"B"]
+        print("dicA\(dic["key1"] ?? "sa")")
+        
         let button = UIButton(frame: CGRect(x: 100, y: 200, width: 200, height:200))
-//        button.setImage(#imageLiteral(resourceName: "WX1"), for: UIControlState.normal)
+//        button.setImage(#imageLiteral(resourceName: "WX1"), for: UIControlState.normal)/Users/leimo/Desktop/Sion/Sion/Class/V/OneViewController.swift
         button.setImage(R.image.wx1(), for: .normal)
 //        button.setImage(UIImage(named: "WX1"), for: .highlighted)
         button.titleLabel?.text = "小鬼"
@@ -94,20 +122,10 @@ class OneViewController: RootViewController {
         
         button.rx.tap
             .subscribe(onNext:{
-                //        print("开始")
-                //        guard let title = button.titleLabel?.text else { return }
-                //        if title == "小鬼" {
-                //          button.titleLabel?.text = "笨蛋"
-                //        }else{
-                //          button.titleLabel?.text = "小鬼"
-                //        }
-                //
-                //        self.loadData()
-                let sionVC = XYYCitySelectViewController()//SionViewController()
+                let sionVC = SionViewController()//XYYCitySelectViewController()
                 self.navigationController?.pushViewController(sionVC, animated: true)
             }).disposed(by: rx.disposeBag)
         
-        print(Music(name: "slb", singer: "b"))
         
         let mailPattern = "^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$"
         let matcher = MyRegex(mailPattern)
@@ -118,24 +136,26 @@ class OneViewController: RootViewController {
             print("邮箱地址格式有误")
         }
         
-        let headImageView = UIImageView(frame: CGRect(x: (screenWidth - 100)/2, y: 70, width: 100, height: 100))
+        let headImageView = UIImageView(frame: CGRect(x: (screenWidth - 100 )/2, y: 70, width: 100, height: 100))
         headImageView.image = UIImage.init(named: "recommend")
         self.view.addSubview(headImageView)
-        
+//        self.view.bringSubview(toFront: )
         let cameraButton = UIButton(frame: CGRect(x: 50, y: 200, width: screenWidth - 50, height: 40))
         cameraButton.setTitle("相机", for: UIControlState.normal)
 //        cameraButton.setTitleColor(R.clr.sionApp.baka(), for: UIControlState.normal)
-//        cameraButton.setTitleColor(R.clr.sionApp.custom(), for: UIControlState.normal)
-//        cameraButton.setTitleColor(UIColor.gray, for: UIControlState.disabled)
+//        cameraButton.setTitleColor(R.clr.sionApp.custom(), for: UIControlState.normal
+//        cameraButton.setTitleColor(UIColor.gray, for: UIControlState.disabled) 31 16 31 31 7 17
         self.view.addSubview(cameraButton)
+        
         //相机是否可用
         //    cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
-        
+        cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
         cameraButton.rx.tap.flatMapLatest { [weak self] in
             return UIImagePickerController.rx.createWithParent(self) { picker in
                 picker.sourceType = .photoLibrary //.camera 相机
                 //是否允许编辑
                 picker.allowsEditing = false //true
+                picker.allowsEditing = false
                 }
                 .flatMap { result in
                     result.rx.didFinishPickingMediaWithInfo
@@ -186,33 +206,37 @@ class OneViewController: RootViewController {
                 print(value)
             }).disposed(by: rx.disposeBag)
         variable.value = subject2
+        
         /*
-         button.rx.tap
+         button.rx.tap3
          .flatMapLatest { [weak self] _ in
          return UIImagePickerController.rx.createWithParent(self) { picker in
          picker.sourceType = .photoLibrary
          picker.allowsEditing = false
-         }
+             }
          .flatMap { value in
          value.rx.didFinishPickingMediaWithInfo
          }
          .take(1)
          }
-         .map { info in
+         .map { info in q
          return info[UIImagePickerControllerOriginalImage] as? UIImage
          }
          .bind(to: button.rx.image(for: UIControlState.normal))
          .disposed(by: rx.disposeBag)
+         https://m.baoshuu.com/TXT/list32_41.html
          */
         //KVO: 通知
         button.rx.observe(String.self, #keyPath(UIButton.titleLabel.text))
             .subscribe(onNext: { value in
                 print(value!)
             }).disposed(by: rx.disposeBag)
+        let model = Singleton.shared
+        model.name = "s"
         
         /*
          let mod1 = Singleton.shared
-         mod1.name = "sion"
+         mod1.name = "sion"[图片]
          let mod2 = Singleton.shared
          mod2.sex = "female"
          let mod3 = Singleton.shared
@@ -254,6 +278,10 @@ class OneViewController: RootViewController {
     //    let sionVC = SionViewController()
     //    navigationController?.pushViewController(sionVC, animated: true)
     //  }
+    fileprivate func columnCount() -> Int {
+        
+        return 0
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -273,12 +301,13 @@ class OneViewController: RootViewController {
 }
 extension OneViewController {
     private func loadData() {
-        //    NetworkTool.loadHomeData {_ in
-        //
-        //    }
+
     }
     override func viewWillAppear(_ animated: Bool) {
         print("10")
+        super.viewWillAppear(animated)
+        self.iPlayer?.prepareToPlay() //准备
+        self.iPlayer?.play() //播放
     }
     override func viewDidAppear(_ animated: Bool) {
         print("20")

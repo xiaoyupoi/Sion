@@ -48,7 +48,7 @@ class FourViewController: RootViewController {
         refreshControl.backgroundColor = UIColor.green//设置背景色
         refreshControl.tintColor = UIColor.orange//菊花的颜色
         
-        self.tabBarController?.tabBar.isHidden = true
+//        self.tabBarController?.tabBar.isHidden = true
         tableView = UITableView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight), style: UITableViewStyle.plain)
         tableView.delegate = self
         tableView.dataSource = self
@@ -105,7 +105,7 @@ class FourViewController: RootViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated. 韵达 3977981977837
     }
 }
 
@@ -115,11 +115,11 @@ extension FourViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(self.array.count)
-        return self.array.count
+        return 10
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return screenHeight
+        return 44
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -129,7 +129,6 @@ extension FourViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         
         self.index = indexPath
         cell.textLabel?.text = "skin\(indexPath.row)"
-        
         /*
         if MediaManager.sharedInstance.player != nil {
             MediaManager.sharedInstance.player?.toEmbedded()

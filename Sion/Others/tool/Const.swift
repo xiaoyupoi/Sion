@@ -8,7 +8,7 @@
 
 import UIKit
 
-let BASE_URL = "http://wx.ppiaoapp.com:18080/chuzhao/"
+let BASE_URL = "http://47.99.139.155:11000/"//"http://wx.ppiaoapp.com:18080/chuzhao/"
 /// 屏幕的宽度
 let screenWidth = UIScreen.main.bounds.width
 /// 屏幕的高度

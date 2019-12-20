@@ -6,7 +6,7 @@ target 'Sion' do
   use_frameworks!
 pod 'Moya/RxSwift', '~> 11.0.2'
 pod 'SwiftyJSON', '~> 4.0.0'
-pod 'HandyJSON', '~> 4.2.1'
+pod 'HandyJSON', '~> 5.0.0'
 pod 'RxSwift', '~> 4.1.2'
 pod 'RxCocoa', '~> 4.1.2'
 pod 'RxDataSources', '~> 3.0.2'
@@ -25,6 +25,8 @@ pod 'JPVideoPlayer', '~> 3.1.1'
 pod 'R.swift', '~> 4.0.0'
 pod 'IGListKit', '~> 3.4.0'
 pod 'PromiseKit', '~> 6.0'
+pod 'SwiftProtobuf', '~> 1.0'
+pod 'ijkplayer'
 #pod 'EZPlayer', '~> 1.0.0'
   # Pods for Sion
 

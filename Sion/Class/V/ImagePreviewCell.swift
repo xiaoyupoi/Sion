@@ -68,7 +68,7 @@ class ImagePreviewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         //重置单元格内元素尺寸
-        resetSize()
+
     }
     
     //获取imageView的缩放尺寸（确保首次显示是可以完整显示整张图片）

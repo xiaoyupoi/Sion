@@ -5,4 +5,6 @@
 #import "MJRefresh/MJRefresh.h"
 #import <Hyphenate/Hyphenate.h>
 #import "EaseUI.h"
-
+#import <IJKMediaFramework/IJKMediaFramework.h>
+#import "IJKDemoMainViewController.h"
+#import "IJKMediaControl.h"

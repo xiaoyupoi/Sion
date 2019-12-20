@@ -12,40 +12,31 @@ import SwiftyJSON
 import HandyJSON
 
 class LoginViewModel {
-  let disposeBag = DisposeBag()
-  //output:
-//  let validatedPassword: Driver<Bool>
-  let signedIn:Driver<Bool>
-  
-  init(input: (username: Driver<String>, password: Driver<String>, loginTaps: Driver<Void>)) 
-  {
+    let disposeBag = DisposeBag()
+    //output:
+    //  let validatedPassword: Driver<Bool>
+    let signedIn:Driver<Bool>
     
-//    validatedPassword = input.password.map({
-//      if $0.count < 6 { return false}
-//      if $0.count > 12 { return false}
-//      return true
-//    })
-    
-    //合并
-    let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0,$1)}
-
-    signedIn = input.loginTaps.withLatestFrom(usernameAndPassword).flatMapLatest({ (event) in
-//      if event.1.count > 12 { return false}
-      print(event)
-
-      return sionProvider.rx.request(.login(phone: event.0, pwd: event.1, type: "1", mobiletype: "2"))
-        .asObservable()
-        .mapJSON()
-//        .trackActivity(signInIndicator)
-        .map({model in
-          let json = JSON(model)
-          print(json["data"])
-          let homeData = JSONDeserializer<HomeNewData>.deserializeFrom(json: json["data"].description)
-          defaultStand.set(homeData?.token, forKey: "token")
-          return true
-      }).asDriver(onErrorJustReturn: false)
-
-    })
-    
-  }
+    init(input: (username: Driver<String>, password: Driver<String>, loginTaps: Driver<Void>))
+    {
+        //合并
+        let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0,$1)}
+        
+        signedIn = input.loginTaps.withLatestFrom(usernameAndPassword).flatMapLatest({ (event) in
+            print(event)
+            return sionProvider.rx.request(.login(phone: event.0, pwd: event.1, type: "1", mobiletype: "2"))
+                .asObservable()
+                .mapJSON()
+                //        .trackActivity(signInIndicator)
+                .map({model in
+                    let json = JSON(model)
+                    print(json["data"])
+                    let homeData = JSONDeserializer<HomeNewData>.deserializeFrom(json: json["data"].description)
+                    defaultStand.set(homeData?.token, forKey: "token")
+                    return true
+                }).asDriver(onErrorJustReturn: false)
+            
+        })
+        
+    }
 }

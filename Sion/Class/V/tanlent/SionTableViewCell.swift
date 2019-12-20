@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Reusable
 
-class SionTableViewCell: UITableViewCell {
+class SionTableViewCell: UITableViewCell, Reusable {
   
   let nameLabel = UILabel(frame: CGRect(x: 10, y: 2, width: UIScreen.main.bounds.size.width, height: 20))
   let singerLabel = UILabel(frame: CGRect(x: 10, y: 20, width: UIScreen.main.bounds.size.width, height: 20))

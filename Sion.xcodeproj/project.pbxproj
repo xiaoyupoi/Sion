@@ -14,6 +14,8 @@
 		4D20B8B42068795D000FB9C4 /* SionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20B8B32068795D000FB9C4 /* SionViewController.swift */; };
 		4D20B8B620687B20000FB9C4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20B8B520687B20000FB9C4 /* RootViewController.swift */; };
 		4D20B8BD2068922A000FB9C4 /* UIColor+RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D20B8BC2068922A000FB9C4 /* UIColor+RGB.swift */; };
+		4D32B4F92271CC4900922E14 /* DataModel.proto in Sources */ = {isa = PBXBuildFile; fileRef = 4D32B4F72271CC4800922E14 /* DataModel.proto */; };
+		4D32B4FA2271CC4900922E14 /* DataModel.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D32B4F82271CC4900922E14 /* DataModel.pb.swift */; };
 		4D36C0E920EE35FB00615C88 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36C0E820EE35FB00615C88 /* ChatViewController.swift */; };
 		4D36C0EB20EE3C4000615C88 /* ImagePreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36C0EA20EE3C4000615C88 /* ImagePreviewVC.swift */; };
 		4D36C0ED20EE3C5100615C88 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D36C0EC20EE3C5100615C88 /* ImagePreviewCell.swift */; };
@@ -68,10 +70,25 @@
 		4D50A14321AE95200057A421 /* sionApp.clr in Resources */ = {isa = PBXBuildFile; fileRef = 4D50A14221AE95200057A421 /* sionApp.clr */; };
 		4D519C5B208B019200BBD5DE /* Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D519C5A208B019200BBD5DE /* Single.swift */; };
 		4D5357A520B25A19000E7663 /* CustomPushAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5357A420B25A19000E7663 /* CustomPushAnimation.swift */; };
+		4D58879A21D5F68900D3E227 /* XYYPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D58879921D5F68600D3E227 /* XYYPracticeViewController.swift */; };
 		4D685B89206A60A5008B9AAE /* SionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D685B88206A60A5008B9AAE /* SionTableViewCell.swift */; };
 		4D71186720B502E600348912 /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71186520B502E500348912 /* UIImagePickerController+Rx.swift */; };
 		4D71186820B502E600348912 /* UIImagePickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D71186620B502E600348912 /* UIImagePickerController+RxCreate.swift */; };
 		4D9AA14A2069DDBA00674E50 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9AA1492069DDBA00674E50 /* NetWorkTool.swift */; };
+		4DAE96BD230D13DF00CBA851 /* IJKQRCodeScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE96AA230D13DD00CBA851 /* IJKQRCodeScanViewController.xib */; };
+		4DAE96BE230D13DF00CBA851 /* IJKDemoInputURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96AB230D13DD00CBA851 /* IJKDemoInputURLViewController.m */; };
+		4DAE96BF230D13DF00CBA851 /* IJKMediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96AC230D13DD00CBA851 /* IJKMediaControl.m */; };
+		4DAE96C0230D13DF00CBA851 /* IJKDemoMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE96AE230D13DD00CBA851 /* IJKDemoMainViewController.xib */; };
+		4DAE96C1230D13DF00CBA851 /* IJKDemoInputURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE96B0230D13DD00CBA851 /* IJKDemoInputURLViewController.xib */; };
+		4DAE96C2230D13DF00CBA851 /* IJKDemoSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE96B1230D13DD00CBA851 /* IJKDemoSampleViewController.xib */; };
+		4DAE96C3230D13DF00CBA851 /* IJKDemoLocalFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96B2230D13DE00CBA851 /* IJKDemoLocalFolderViewController.m */; };
+		4DAE96C4230D13DF00CBA851 /* IJKMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DAE96B6230D13DE00CBA851 /* IJKMoviePlayerViewController.xib */; };
+		4DAE96C5230D13DF00CBA851 /* IJKDemoSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96B7230D13DE00CBA851 /* IJKDemoSampleViewController.m */; };
+		4DAE96C6230D13DF00CBA851 /* IJKQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96B8230D13DE00CBA851 /* IJKQRCodeScanViewController.m */; };
+		4DAE96C7230D13DF00CBA851 /* IJKDemoMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96BA230D13DE00CBA851 /* IJKDemoMainViewController.m */; };
+		4DAE96C8230D13DF00CBA851 /* IJKMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96BC230D13DE00CBA851 /* IJKMoviePlayerViewController.m */; };
+		4DAE96CE230D156800CBA851 /* Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96CC230D156800CBA851 /* Barcode.m */; };
+		4DAE96CF230D156800CBA851 /* IJKDemoHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAE96CD230D156800CBA851 /* IJKDemoHistory.m */; };
 		4DB12E5320A29B8300789D45 /* RecommendFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E5220A29B8300789D45 /* RecommendFlowLayout.swift */; };
 		4DB12E5520A29D0400789D45 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E5420A29D0400789D45 /* RecommendCell.swift */; };
 		4DB12E5720A2C0E300789D45 /* SquareCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E5620A2C0E300789D45 /* SquareCell.swift */; };
@@ -82,12 +99,15 @@
 		4DB12E6120A2CF3700789D45 /* RecommendItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E6020A2CF3700789D45 /* RecommendItemModel.swift */; };
 		4DB12E6320A2E2D100789D45 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E6220A2E2D100789D45 /* RecommendViewModel.swift */; };
 		4DB12E6520A2EC5600789D45 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB12E6420A2EC5600789D45 /* ViewModelType.swift */; };
+		4DBCFCA223AC7150003E6E2A /* YEAddressBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCFCA123AC7150003E6E2A /* YEAddressBookViewController.swift */; };
 		4DCF10F720A3230500922F89 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10F620A3230500922F89 /* RecommendModel.swift */; };
 		4DCF10F920A323C600922F89 /* FocusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10F820A323C600922F89 /* FocusModel.swift */; };
 		4DCF10FB20A3248800922F89 /* SquareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10FA20A3248800922F89 /* SquareModel.swift */; };
 		4DCF10FD20A324AF00922F89 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10FC20A324AF00922F89 /* CategoryModel.swift */; };
 		4DDDE82920ADACBF008BE5AB /* SionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDE82820ADACBF008BE5AB /* SionView.swift */; };
 		4DE020C220CEA49600294FF9 /* RxEventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE020C120CEA49600294FF9 /* RxEventHub.swift */; };
+		4DE0691B227414D500A9F546 /* contact.proto in Sources */ = {isa = PBXBuildFile; fileRef = 4DE06919227414D500A9F546 /* contact.proto */; };
+		4DE0691C227414D500A9F546 /* contact.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE0691A227414D500A9F546 /* contact.pb.swift */; };
 		4DE21896207B2DEE0099EFD5 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE21895207B2DEE0099EFD5 /* RegisterViewModel.swift */; };
 		4DE92A5E2069E17500C097BE /* HomeNewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE92A5D2069E17500C097BE /* HomeNewData.swift */; };
 		4DE92A602069E5A100C097BE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE92A5F2069E5A100C097BE /* Const.swift */; };
@@ -185,6 +205,8 @@
 		4D20B8B32068795D000FB9C4 /* SionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SionViewController.swift; sourceTree = "<group>"; };
 		4D20B8B520687B20000FB9C4 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4D20B8BC2068922A000FB9C4 /* UIColor+RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGB.swift"; sourceTree = "<group>"; };
+		4D32B4F72271CC4800922E14 /* DataModel.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = DataModel.proto; sourceTree = "<group>"; };
+		4D32B4F82271CC4900922E14 /* DataModel.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.pb.swift; sourceTree = "<group>"; };
 		4D36C0E820EE35FB00615C88 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		4D36C0EA20EE3C4000615C88 /* ImagePreviewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewVC.swift; sourceTree = "<group>"; };
 		4D36C0EC20EE3C5100615C88 /* ImagePreviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewCell.swift; sourceTree = "<group>"; };
@@ -246,10 +268,35 @@
 		4D50A14221AE95200057A421 /* sionApp.clr */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = sionApp.clr; sourceTree = SOURCE_ROOT; };
 		4D519C5A208B019200BBD5DE /* Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Single.swift; sourceTree = "<group>"; };
 		4D5357A420B25A19000E7663 /* CustomPushAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimation.swift; sourceTree = "<group>"; };
+		4D58879921D5F68600D3E227 /* XYYPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYYPracticeViewController.swift; sourceTree = "<group>"; };
 		4D685B88206A60A5008B9AAE /* SionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SionTableViewCell.swift; sourceTree = "<group>"; };
 		4D71186520B502E500348912 /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		4D71186620B502E600348912 /* UIImagePickerController+RxCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+RxCreate.swift"; sourceTree = "<group>"; };
 		4D9AA1492069DDBA00674E50 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		4DAE96AA230D13DD00CBA851 /* IJKQRCodeScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKQRCodeScanViewController.xib; sourceTree = "<group>"; };
+		4DAE96AB230D13DD00CBA851 /* IJKDemoInputURLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoInputURLViewController.m; sourceTree = "<group>"; };
+		4DAE96AC230D13DD00CBA851 /* IJKMediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKMediaControl.m; sourceTree = "<group>"; };
+		4DAE96AD230D13DD00CBA851 /* IJKMediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMediaControl.h; sourceTree = "<group>"; };
+		4DAE96AE230D13DD00CBA851 /* IJKDemoMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKDemoMainViewController.xib; sourceTree = "<group>"; };
+		4DAE96AF230D13DD00CBA851 /* IJKMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKMoviePlayerViewController.h; sourceTree = "<group>"; };
+		4DAE96B0230D13DD00CBA851 /* IJKDemoInputURLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKDemoInputURLViewController.xib; sourceTree = "<group>"; };
+		4DAE96B1230D13DD00CBA851 /* IJKDemoSampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKDemoSampleViewController.xib; sourceTree = "<group>"; };
+		4DAE96B2230D13DE00CBA851 /* IJKDemoLocalFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoLocalFolderViewController.m; sourceTree = "<group>"; };
+		4DAE96B3230D13DE00CBA851 /* IJKDemoInputURLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoInputURLViewController.h; sourceTree = "<group>"; };
+		4DAE96B4230D13DE00CBA851 /* IJKDemoMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoMainViewController.h; sourceTree = "<group>"; };
+		4DAE96B5230D13DE00CBA851 /* IJKDemoSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoSampleViewController.h; sourceTree = "<group>"; };
+		4DAE96B6230D13DE00CBA851 /* IJKMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IJKMoviePlayerViewController.xib; sourceTree = "<group>"; };
+		4DAE96B7230D13DE00CBA851 /* IJKDemoSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoSampleViewController.m; sourceTree = "<group>"; };
+		4DAE96B8230D13DE00CBA851 /* IJKQRCodeScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKQRCodeScanViewController.m; sourceTree = "<group>"; };
+		4DAE96B9230D13DE00CBA851 /* IJKQRCodeScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKQRCodeScanViewController.h; sourceTree = "<group>"; };
+		4DAE96BA230D13DE00CBA851 /* IJKDemoMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoMainViewController.m; sourceTree = "<group>"; };
+		4DAE96BB230D13DE00CBA851 /* IJKDemoLocalFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoLocalFolderViewController.h; sourceTree = "<group>"; };
+		4DAE96BC230D13DE00CBA851 /* IJKMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKMoviePlayerViewController.m; sourceTree = "<group>"; };
+		4DAE96C9230D156700CBA851 /* Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barcode.h; sourceTree = "<group>"; };
+		4DAE96CA230D156700CBA851 /* IJKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKCommon.h; sourceTree = "<group>"; };
+		4DAE96CB230D156800CBA851 /* IJKDemoHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IJKDemoHistory.h; sourceTree = "<group>"; };
+		4DAE96CC230D156800CBA851 /* Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Barcode.m; sourceTree = "<group>"; };
+		4DAE96CD230D156800CBA851 /* IJKDemoHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IJKDemoHistory.m; sourceTree = "<group>"; };
 		4DB12E5220A29B8300789D45 /* RecommendFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendFlowLayout.swift; sourceTree = "<group>"; };
 		4DB12E5420A29D0400789D45 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		4DB12E5620A2C0E300789D45 /* SquareCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCell.swift; sourceTree = "<group>"; };
@@ -260,6 +307,7 @@
 		4DB12E6020A2CF3700789D45 /* RecommendItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendItemModel.swift; sourceTree = "<group>"; };
 		4DB12E6220A2E2D100789D45 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
 		4DB12E6420A2EC5600789D45 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		4DBCFCA123AC7150003E6E2A /* YEAddressBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YEAddressBookViewController.swift; sourceTree = "<group>"; };
 		4DCF10F620A3230500922F89 /* RecommendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
 		4DCF10F820A323C600922F89 /* FocusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModel.swift; sourceTree = "<group>"; };
 		4DCF10FA20A3248800922F89 /* SquareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareModel.swift; sourceTree = "<group>"; };
@@ -268,6 +316,8 @@
 		4DDDE82820ADACBF008BE5AB /* SionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SionView.swift; sourceTree = "<group>"; };
 		4DDFBAF120EBA18B00B1A299 /* Sion.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sion.pch; sourceTree = "<group>"; };
 		4DE020C120CEA49600294FF9 /* RxEventHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxEventHub.swift; sourceTree = "<group>"; };
+		4DE06919227414D500A9F546 /* contact.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = contact.proto; sourceTree = "<group>"; };
+		4DE0691A227414D500A9F546 /* contact.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contact.pb.swift; sourceTree = "<group>"; };
 		4DE21895207B2DEE0099EFD5 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		4DE92A5D2069E17500C097BE /* HomeNewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewData.swift; sourceTree = "<group>"; };
 		4DE92A5F2069E5A100C097BE /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
@@ -525,6 +575,10 @@
 				4D0FB658206DD6430068DFCC /* Protocol.swift */,
 				4D4B9FBB2064A8260026CE2A /* ViewController.swift */,
 				4D50A13221AE2A0B0057A421 /* R.generated.swift */,
+				4D32B4F82271CC4900922E14 /* DataModel.pb.swift */,
+				4D32B4F72271CC4800922E14 /* DataModel.proto */,
+				4DE0691A227414D500A9F546 /* contact.pb.swift */,
+				4DE06919227414D500A9F546 /* contact.proto */,
 				4D50A14221AE95200057A421 /* sionApp.clr */,
 				4D4B9FEC2064A89F0026CE2A /* Class */,
 				4D4B9FF42064A89F0026CE2A /* Main */,
@@ -601,8 +655,10 @@
 		4D4B9FF32064A89F0026CE2A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				4DAE96A9230D13CD00CBA851 /* video */,
 				4DB12E4A20A2930A00789D45 /* 关注 */,
 				4D4B9FEF2064A89F0026CE2A /* OneViewController.swift */,
+				4D58879921D5F68600D3E227 /* XYYPracticeViewController.swift */,
 				4DEDB36E20C776C2005A9993 /* tanlent */,
 				4D71186620B502E600348912 /* UIImagePickerController+RxCreate.swift */,
 				4D71186520B502E500348912 /* UIImagePickerController+Rx.swift */,
@@ -629,9 +685,42 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		4DAE96A9230D13CD00CBA851 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE96C9230D156700CBA851 /* Barcode.h */,
+				4DAE96CC230D156800CBA851 /* Barcode.m */,
+				4DAE96CA230D156700CBA851 /* IJKCommon.h */,
+				4DAE96CB230D156800CBA851 /* IJKDemoHistory.h */,
+				4DAE96CD230D156800CBA851 /* IJKDemoHistory.m */,
+				4DAE96B3230D13DE00CBA851 /* IJKDemoInputURLViewController.h */,
+				4DAE96AB230D13DD00CBA851 /* IJKDemoInputURLViewController.m */,
+				4DAE96B0230D13DD00CBA851 /* IJKDemoInputURLViewController.xib */,
+				4DAE96BB230D13DE00CBA851 /* IJKDemoLocalFolderViewController.h */,
+				4DAE96B2230D13DE00CBA851 /* IJKDemoLocalFolderViewController.m */,
+				4DAE96B4230D13DE00CBA851 /* IJKDemoMainViewController.h */,
+				4DAE96BA230D13DE00CBA851 /* IJKDemoMainViewController.m */,
+				4DAE96AE230D13DD00CBA851 /* IJKDemoMainViewController.xib */,
+				4DAE96B5230D13DE00CBA851 /* IJKDemoSampleViewController.h */,
+				4DAE96B7230D13DE00CBA851 /* IJKDemoSampleViewController.m */,
+				4DAE96B1230D13DD00CBA851 /* IJKDemoSampleViewController.xib */,
+				4DAE96AD230D13DD00CBA851 /* IJKMediaControl.h */,
+				4DAE96AC230D13DD00CBA851 /* IJKMediaControl.m */,
+				4DAE96AF230D13DD00CBA851 /* IJKMoviePlayerViewController.h */,
+				4DAE96BC230D13DE00CBA851 /* IJKMoviePlayerViewController.m */,
+				4DAE96B6230D13DE00CBA851 /* IJKMoviePlayerViewController.xib */,
+				4DAE96B9230D13DE00CBA851 /* IJKQRCodeScanViewController.h */,
+				4DAE96B8230D13DE00CBA851 /* IJKQRCodeScanViewController.m */,
+				4DAE96AA230D13DD00CBA851 /* IJKQRCodeScanViewController.xib */,
+			);
+			name = video;
+			path = Sion/Class/video;
+			sourceTree = SOURCE_ROOT;
+		};
 		4DB12E4A20A2930A00789D45 /* 关注 */ = {
 			isa = PBXGroup;
 			children = (
+				4DBCFC9923AC707D003E6E2A /* bookAdress */,
 				4DB12E4D20A29AA400789D45 /* FlowLayout */,
 				4DB12E4B20A29AA400789D45 /* Model */,
 				4DB12E4C20A29AA400789D45 /* View */,
@@ -682,6 +771,55 @@
 				4DB12E6420A2EC5600789D45 /* ViewModelType.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DBCFC9923AC707D003E6E2A /* bookAdress */ = {
+			isa = PBXGroup;
+			children = (
+				4DBCFC9A23AC70D0003E6E2A /* API */,
+				4DBCFC9C23AC70D0003E6E2A /* Manager */,
+				4DBCFC9E23AC70D0003E6E2A /* Module */,
+				4DBCFC9B23AC70D0003E6E2A /* View */,
+				4DBCFC9D23AC70D0003E6E2A /* ViewModel */,
+			);
+			name = bookAdress;
+			path = Sion/Class/bookAdress;
+			sourceTree = SOURCE_ROOT;
+		};
+		4DBCFC9A23AC70D0003E6E2A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		4DBCFC9B23AC70D0003E6E2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DBCFCA123AC7150003E6E2A /* YEAddressBookViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DBCFC9C23AC70D0003E6E2A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		4DBCFC9D23AC70D0003E6E2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4DBCFC9E23AC70D0003E6E2A /* Module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Module;
 			sourceTree = "<group>";
 		};
 		4DEDB36E20C776C2005A9993 /* tanlent */ = {
@@ -1076,7 +1214,6 @@
 				4D4B9FB32064A8260026CE2A /* Frameworks */,
 				4D4B9FB42064A8260026CE2A /* Resources */,
 				18031E266161CE6C3C41A13C /* [CP] Embed Pods Frameworks */,
-				3B12B4C7521326D8DFAAB85C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1095,8 +1232,6 @@
 				4D4B9FC92064A8260026CE2A /* Sources */,
 				4D4B9FCA2064A8260026CE2A /* Frameworks */,
 				4D4B9FCB2064A8260026CE2A /* Resources */,
-				2E304747789C555BE134050A /* [CP] Embed Pods Frameworks */,
-				DB5056A8B6FB6AAC0DA381F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1116,8 +1251,6 @@
 				4D4B9FD42064A8260026CE2A /* Sources */,
 				4D4B9FD52064A8260026CE2A /* Frameworks */,
 				4D4B9FD62064A8260026CE2A /* Resources */,
-				4381F93B260491AEEF1799C3 /* [CP] Embed Pods Frameworks */,
-				608A1C80751B9437717A0809 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1186,11 +1319,16 @@
 				4D50A14321AE95200057A421 /* sionApp.clr in Resources */,
 				4DEFFA2D20ECBB1200362AFA /* EaseUIResource.bundle in Resources */,
 				4D42A37320FDDFA500404867 /* EZPlayerControlView.xib in Resources */,
+				4DAE96C1230D13DF00CBA851 /* IJKDemoInputURLViewController.xib in Resources */,
 				4D50A13F21AE93F90057A421 /* View.xib in Resources */,
+				4DAE96C2230D13DF00CBA851 /* IJKDemoSampleViewController.xib in Resources */,
+				4DAE96C4230D13DF00CBA851 /* IJKMoviePlayerViewController.xib in Resources */,
 				4D4B9FC42064A8260026CE2A /* Assets.xcassets in Resources */,
 				4DF4D38B211BD5630071E639 /* cities.plist in Resources */,
 				4D42A36D20FDDFA500404867 /* EZPlayer.xcassets in Resources */,
 				4D42A37720FDDFA500404867 /* EZPlayerFloatContainerRootViewController.xib in Resources */,
+				4DAE96C0230D13DF00CBA851 /* IJKDemoMainViewController.xib in Resources */,
+				4DAE96BD230D13DF00CBA851 /* IJKQRCodeScanViewController.xib in Resources */,
 				4D42A36F20FDDFA500404867 /* EZPlayerAudibleLegibleViewController.xib in Resources */,
 				4D42A38220FDDFA500404867 /* Info.plist in Resources */,
 				4D4B9FBF2064A8260026CE2A /* Main.storyboard in Resources */,
@@ -1220,7 +1358,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Sion/Pods-Sion-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Sion/Pods-Sion-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
@@ -1244,6 +1382,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1271,56 +1410,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftEntryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sion/Pods-Sion-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2E304747789C555BE134050A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SionTests/Pods-SionTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B12B4C7521326D8DFAAB85C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sion/Pods-Sion-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4381F93B260491AEEF1799C3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SionUITests/Pods-SionUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sion/Pods-Sion-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4981B143FAF8AD3030B005B1 /* [CP] Check Pods Manifest.lock */ = {
@@ -1372,36 +1467,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		608A1C80751B9437717A0809 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SionUITests/Pods-SionUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB5056A8B6FB6AAC0DA381F1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SionTests/Pods-SionTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F2BE0FD527B881F4217954E4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1429,12 +1494,14 @@
 			files = (
 				4D42A37C20FDDFA500404867 /* EZPlayerNotification.swift in Sources */,
 				4D4B9FFD2064A89F0026CE2A /* MyTabBarViewController.swift in Sources */,
+				4DAE96CF230D156800CBA851 /* IJKDemoHistory.m in Sources */,
 				4D4B9FFC2064A89F0026CE2A /* MyNavigationViewController.swift in Sources */,
 				4DEFFA1420ECBB1200362AFA /* EaseRefreshTableViewController.m in Sources */,
 				4DEFFA0120ECBB1200362AFA /* EaseConversationModel.m in Sources */,
 				4D4B9FF72064A89F0026CE2A /* AppDelegate.swift in Sources */,
 				4D36C0E920EE35FB00615C88 /* ChatViewController.swift in Sources */,
 				4DEFF9F620ECBB1200362AFA /* EMCDDeviceManager+Media.m in Sources */,
+				4DAE96C3230D13DF00CBA851 /* IJKDemoLocalFolderViewController.m in Sources */,
 				4D20B8B620687B20000FB9C4 /* RootViewController.swift in Sources */,
 				4D42A36820FDDFA500404867 /* AVAsset+EZPlayer.swift in Sources */,
 				4D42A37420FDDFA500404867 /* EZPlayerFairPlayResourceLoaderDelegate.swift in Sources */,
@@ -1445,6 +1512,7 @@
 				4DEFFA1620ECBB1200362AFA /* EaseViewController.m in Sources */,
 				4D08F53D206D14F300481785 /* LoginModel.swift in Sources */,
 				4DFB69D4207A09A800B98898 /* CBToast.swift in Sources */,
+				4DAE96C7230D13DF00CBA851 /* IJKDemoMainViewController.m in Sources */,
 				4DEFFA1A20ECBB1200362AFA /* EaseMessageCell.m in Sources */,
 				4D5357A520B25A19000E7663 /* CustomPushAnimation.swift in Sources */,
 				4DEFFA2920ECBB1200362AFA /* EaseFacialView.m in Sources */,
@@ -1453,9 +1521,12 @@
 				4D42A38120FDDFA500404867 /* EZPlayerView.swift in Sources */,
 				4DEFFA1520ECBB1200362AFA /* EaseUsersListViewController.m in Sources */,
 				4D42A25C20FD81BA00404867 /* MediaManager.swift in Sources */,
+				4D32B4FA2271CC4900922E14 /* DataModel.pb.swift in Sources */,
 				4DEFFA2820ECBB1200362AFA /* EaseFaceView.m in Sources */,
 				4DE92A5E2069E17500C097BE /* HomeNewData.swift in Sources */,
+				4DBCFCA223AC7150003E6E2A /* YEAddressBookViewController.swift in Sources */,
 				4DCF10F920A323C600922F89 /* FocusModel.swift in Sources */,
+				4DAE96C8230D13DF00CBA851 /* IJKMoviePlayerViewController.m in Sources */,
 				4DCF10FB20A3248800922F89 /* SquareModel.swift in Sources */,
 				4DEFFA1E20ECBB1200362AFA /* EaseBubbleView+Image.m in Sources */,
 				4DEFFA2020ECBB1200362AFA /* EaseBubbleView+Text.m in Sources */,
@@ -1470,11 +1541,14 @@
 				4DEFF9F520ECBB1200362AFA /* EMAudioRecorderUtil.m in Sources */,
 				4DEFFA1C20ECBB1200362AFA /* EaseBubbleView+File.m in Sources */,
 				4D4B9FBC2064A8260026CE2A /* ViewController.swift in Sources */,
+				4D32B4F92271CC4900922E14 /* DataModel.proto in Sources */,
 				4DEFFA1220ECBB1200362AFA /* EaseLocationViewController.m in Sources */,
 				4DEFFA2520ECBB1200362AFA /* EaseChatToolbarItem.m in Sources */,
 				4DEFFA2220ECBB1200362AFA /* EaseBubbleView+Voice.m in Sources */,
 				4DB12E6520A2EC5600789D45 /* ViewModelType.swift in Sources */,
+				4DAE96CE230D156800CBA851 /* Barcode.m in Sources */,
 				4DEFFA0020ECBB1200362AFA /* EaseSDKHelper.m in Sources */,
+				4DAE96BE230D13DF00CBA851 /* IJKDemoInputURLViewController.m in Sources */,
 				4D42A37F20FDDFA500404867 /* EZPlayerTransportExtension.swift in Sources */,
 				4D519C5B208B019200BBD5DE /* Single.swift in Sources */,
 				4D42A36E20FDDFA500404867 /* EZPlayerAudibleLegibleViewController.swift in Sources */,
@@ -1483,6 +1557,7 @@
 				4DEFF9F720ECBB1200362AFA /* EMCDDeviceManager+Microphone.m in Sources */,
 				4D42A37A20FDDFA500404867 /* EZPlayerFullScreenViewController.swift in Sources */,
 				4DEFFA0220ECBB1200362AFA /* EaseMessageModel.m in Sources */,
+				4DAE96C5230D13DF00CBA851 /* IJKDemoSampleViewController.m in Sources */,
 				4D42A36920FDDFA500404867 /* AVPlayer+EZPlayer.swift in Sources */,
 				4DEFFA0820ECBB1200362AFA /* UIViewController+HUD.m in Sources */,
 				4D4B9FFA2064A89F0026CE2A /* ThreeViewController.swift in Sources */,
@@ -1501,6 +1576,7 @@
 				4DEFFA1B20ECBB1200362AFA /* EaseMessageTimeCell.m in Sources */,
 				4DEFFA0420ECBB1200362AFA /* NSDate+Category.m in Sources */,
 				4D20B8B42068795D000FB9C4 /* SionViewController.swift in Sources */,
+				4D58879A21D5F68900D3E227 /* XYYPracticeViewController.swift in Sources */,
 				4D71186720B502E600348912 /* UIImagePickerController+Rx.swift in Sources */,
 				4DEFFA0720ECBB1200362AFA /* UIViewController+DismissKeyboard.m in Sources */,
 				4DFA157320F62D9100A81504 /* ViedoTableViewCell.swift in Sources */,
@@ -1527,18 +1603,22 @@
 				4DEFF9F420ECBB1200362AFA /* EMAudioPlayerUtil.m in Sources */,
 				4D42A25D20FD81BA00404867 /* MediaItem.swift in Sources */,
 				4DEFFA0620ECBB1200362AFA /* NSString+Valid.m in Sources */,
+				4DE0691C227414D500A9F546 /* contact.pb.swift in Sources */,
 				4DEDB36D20C7763E005A9993 /* TalentModel.swift in Sources */,
 				4D685B89206A60A5008B9AAE /* SionTableViewCell.swift in Sources */,
 				4DF4625C206B6D9600D3C1A7 /* MusicListViewModel.swift in Sources */,
 				4D42A36A20FDDFA500404867 /* AVPlayerItem+EZPlayer.swift in Sources */,
 				4D4B9FC22064A8260026CE2A /* Sion.xcdatamodeld in Sources */,
 				4DEFFA1120ECBB1200362AFA /* EaseConversationListViewController.m in Sources */,
+				4DAE96BF230D13DF00CBA851 /* IJKMediaControl.m in Sources */,
 				4DE020C220CEA49600294FF9 /* RxEventHub.swift in Sources */,
 				4DB12E6320A2E2D100789D45 /* RecommendViewModel.swift in Sources */,
 				4D42A37220FDDFA500404867 /* EZPlayerControlView.swift in Sources */,
 				4D0FB659206DD6430068DFCC /* Protocol.swift in Sources */,
 				4D71186820B502E600348912 /* UIImagePickerController+RxCreate.swift in Sources */,
+				4DAE96C6230D13DF00CBA851 /* IJKQRCodeScanViewController.m in Sources */,
 				4DB12E6120A2CF3700789D45 /* RecommendItemModel.swift in Sources */,
+				4DE0691B227414D500A9F546 /* contact.proto in Sources */,
 				4DEFFA0B20ECBB1200362AFA /* EaseMessageReadManager.m in Sources */,
 				4DEFFA2620ECBB1200362AFA /* EaseImageView.m in Sources */,
 				4DEFFA1F20ECBB1200362AFA /* EaseBubbleView+Location.m in Sources */,

@@ -15,7 +15,7 @@ public struct  MediaTypes: OptionSet {
     public static let closedCaption = MediaTypes(rawValue: 1 << 1)
     public static let subtitles = MediaTypes(rawValue: 1 << 2)
 
-    public init(rawValue: MediaTypes.RawValue) {
+    public init(rawValue: Int) {
         self.rawValue = rawValue
     }
 }

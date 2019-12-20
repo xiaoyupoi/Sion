@@ -40,7 +40,7 @@ class MyTabBarViewController: UITabBarController {
     threeVC.tabBarItem.selectedImage = UIImage(named: "huoshan_tabbar_press_32x32_")
     threeVC.title = "第三页"
     
-    let fourVC = FourViewController()
+    let fourVC = XYYPracticeViewController()
     fourVC.tabBarItem.image = UIImage(named: "huoshan_tabbar_32x32_")
     fourVC.tabBarItem.selectedImage = UIImage(named: "huoshan_tabbar_press_32x32_")
     fourVC.title = "第四页"
