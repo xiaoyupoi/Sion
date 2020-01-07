@@ -85,6 +85,7 @@ class OneViewController: RootViewController {
 //        id<IJKMediaPlayback> playback = [[IJKFFMoviePlayerController alloc] initWithContentURL:nil  withOptions:nil];
 //
 //        [playback shutdown];
+        /*
         let video = "http://aliyaoapp.oss-cn-hangzhou.aliyuncs.com/videos/001/out.m3u8"//"http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4"//
         let options:IJKFFOptions = IJKFFOptions.byDefault()
         let url:URL = URL.init(string: video)!
@@ -102,7 +103,7 @@ class OneViewController: RootViewController {
         self.delegatePlayer = self.iPlayer
         self.view.autoresizesSubviews = true
         self.view.addSubview((self.iPlayer?.view)!)
-        
+        */
         
         let dic = ["key1":"A","key2":"B"]
         print("dicA\(dic["key1"] ?? "sa")")
@@ -122,7 +123,7 @@ class OneViewController: RootViewController {
         
         button.rx.tap
             .subscribe(onNext:{
-                let sionVC = SionViewController()//XYYCitySelectViewController()
+                let sionVC = YEAddressBookViewController()//XYYCitySelectViewController()
                 self.navigationController?.pushViewController(sionVC, animated: true)
             }).disposed(by: rx.disposeBag)
         

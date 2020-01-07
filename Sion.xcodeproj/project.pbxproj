@@ -104,6 +104,14 @@
 		4DCF10F920A323C600922F89 /* FocusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10F820A323C600922F89 /* FocusModel.swift */; };
 		4DCF10FB20A3248800922F89 /* SquareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10FA20A3248800922F89 /* SquareModel.swift */; };
 		4DCF10FD20A324AF00922F89 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCF10FC20A324AF00922F89 /* CategoryModel.swift */; };
+		4DD7E7D423C41BFC00B81625 /* DryLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7CF23C41BFB00B81625 /* DryLocation.swift */; };
+		4DD7E7D523C41BFC00B81625 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7D023C41BFB00B81625 /* NetworkManager.swift */; };
+		4DD7E7D623C41BFC00B81625 /* MMOSSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7D123C41BFB00B81625 /* MMOSSManager.swift */; };
+		4DD7E7D723C41BFC00B81625 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7D223C41BFB00B81625 /* API.swift */; };
+		4DD7E7D823C41BFC00B81625 /* MoyaConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7D323C41BFB00B81625 /* MoyaConfig.swift */; };
+		4DD7E7DA23C4242E00B81625 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7D923C4242E00B81625 /* ArticleViewModel.swift */; };
+		4DD7E7DC23C424B400B81625 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7DB23C424B400B81625 /* ArticleModel.swift */; };
+		4DD7E7DE23C4278C00B81625 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD7E7DD23C4278C00B81625 /* ArticleTableViewCell.swift */; };
 		4DDDE82920ADACBF008BE5AB /* SionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDDE82820ADACBF008BE5AB /* SionView.swift */; };
 		4DE020C220CEA49600294FF9 /* RxEventHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE020C120CEA49600294FF9 /* RxEventHub.swift */; };
 		4DE0691B227414D500A9F546 /* contact.proto in Sources */ = {isa = PBXBuildFile; fileRef = 4DE06919227414D500A9F546 /* contact.proto */; };
@@ -313,6 +321,14 @@
 		4DCF10FA20A3248800922F89 /* SquareModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareModel.swift; sourceTree = "<group>"; };
 		4DCF10FC20A324AF00922F89 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		4DD1C1B120B6A7450031A86A /* Sion-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sion-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DD7E7CF23C41BFB00B81625 /* DryLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DryLocation.swift; sourceTree = "<group>"; };
+		4DD7E7D023C41BFB00B81625 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4DD7E7D123C41BFB00B81625 /* MMOSSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMOSSManager.swift; sourceTree = "<group>"; };
+		4DD7E7D223C41BFB00B81625 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4DD7E7D323C41BFB00B81625 /* MoyaConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaConfig.swift; sourceTree = "<group>"; };
+		4DD7E7D923C4242E00B81625 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		4DD7E7DB23C424B400B81625 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		4DD7E7DD23C4278C00B81625 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		4DDDE82820ADACBF008BE5AB /* SionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SionView.swift; sourceTree = "<group>"; };
 		4DDFBAF120EBA18B00B1A299 /* Sion.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sion.pch; sourceTree = "<group>"; };
 		4DE020C120CEA49600294FF9 /* RxEventHub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxEventHub.swift; sourceTree = "<group>"; };
@@ -570,6 +586,7 @@
 		4D4B9FB82064A8260026CE2A /* Sion */ = {
 			isa = PBXGroup;
 			children = (
+				4DD7E7CE23C41BFB00B81625 /* API */,
 				4D42A34A20FDDFA500404867 /* EZPlayer */,
 				4DEFF95A20ECBB1100362AFA /* EaseUI */,
 				4D0FB658206DD6430068DFCC /* Protocol.swift */,
@@ -778,7 +795,7 @@
 			children = (
 				4DBCFC9A23AC70D0003E6E2A /* API */,
 				4DBCFC9C23AC70D0003E6E2A /* Manager */,
-				4DBCFC9E23AC70D0003E6E2A /* Module */,
+				4DBCFC9E23AC70D0003E6E2A /* Model */,
 				4DBCFC9B23AC70D0003E6E2A /* View */,
 				4DBCFC9D23AC70D0003E6E2A /* ViewModel */,
 			);
@@ -797,6 +814,7 @@
 			isa = PBXGroup;
 			children = (
 				4DBCFCA123AC7150003E6E2A /* YEAddressBookViewController.swift */,
+				4DD7E7DD23C4278C00B81625 /* ArticleTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -811,15 +829,29 @@
 		4DBCFC9D23AC70D0003E6E2A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4DD7E7D923C4242E00B81625 /* ArticleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4DBCFC9E23AC70D0003E6E2A /* Module */ = {
+		4DBCFC9E23AC70D0003E6E2A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4DD7E7DB23C424B400B81625 /* ArticleModel.swift */,
 			);
-			path = Module;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DD7E7CE23C41BFB00B81625 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4DD7E7CF23C41BFB00B81625 /* DryLocation.swift */,
+				4DD7E7D023C41BFB00B81625 /* NetworkManager.swift */,
+				4DD7E7D123C41BFB00B81625 /* MMOSSManager.swift */,
+				4DD7E7D223C41BFB00B81625 /* API.swift */,
+				4DD7E7D323C41BFB00B81625 /* MoyaConfig.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		4DEDB36E20C776C2005A9993 /* tanlent */ = {
@@ -1502,12 +1534,15 @@
 				4D36C0E920EE35FB00615C88 /* ChatViewController.swift in Sources */,
 				4DEFF9F620ECBB1200362AFA /* EMCDDeviceManager+Media.m in Sources */,
 				4DAE96C3230D13DF00CBA851 /* IJKDemoLocalFolderViewController.m in Sources */,
+				4DD7E7DC23C424B400B81625 /* ArticleModel.swift in Sources */,
 				4D20B8B620687B20000FB9C4 /* RootViewController.swift in Sources */,
 				4D42A36820FDDFA500404867 /* AVAsset+EZPlayer.swift in Sources */,
 				4D42A37420FDDFA500404867 /* EZPlayerFairPlayResourceLoaderDelegate.swift in Sources */,
 				4D42A37E20FDDFA500404867 /* EZPlayerTransport.swift in Sources */,
+				4DD7E7D623C41BFC00B81625 /* MMOSSManager.swift in Sources */,
 				4DEFFA0F20ECBB1200362AFA /* EaseEmotionManager.m in Sources */,
 				4DEFF9FA20ECBB1200362AFA /* EMCDDeviceManagerBase.m in Sources */,
+				4DD7E7DA23C4242E00B81625 /* ArticleViewModel.swift in Sources */,
 				4D4B9FF92064A89F0026CE2A /* OneViewController.swift in Sources */,
 				4DEFFA1620ECBB1200362AFA /* EaseViewController.m in Sources */,
 				4D08F53D206D14F300481785 /* LoginModel.swift in Sources */,
@@ -1548,6 +1583,7 @@
 				4DB12E6520A2EC5600789D45 /* ViewModelType.swift in Sources */,
 				4DAE96CE230D156800CBA851 /* Barcode.m in Sources */,
 				4DEFFA0020ECBB1200362AFA /* EaseSDKHelper.m in Sources */,
+				4DD7E7D523C41BFC00B81625 /* NetworkManager.swift in Sources */,
 				4DAE96BE230D13DF00CBA851 /* IJKDemoInputURLViewController.m in Sources */,
 				4D42A37F20FDDFA500404867 /* EZPlayerTransportExtension.swift in Sources */,
 				4D519C5B208B019200BBD5DE /* Single.swift in Sources */,
@@ -1570,6 +1606,7 @@
 				4DEFFA1720ECBB1200362AFA /* EaseUserCell.m in Sources */,
 				4DEFFA2320ECBB1200362AFA /* EaseBubbleView.m in Sources */,
 				4DEFFA1020ECBB1200362AFA /* FixFopen.c in Sources */,
+				4DD7E7DE23C4278C00B81625 /* ArticleTableViewCell.swift in Sources */,
 				4DEFFA1920ECBB1200362AFA /* EaseCustomMessageCell.m in Sources */,
 				4D4B9FFB2064A89F0026CE2A /* TwoViewController.swift in Sources */,
 				4DB12E5320A29B8300789D45 /* RecommendFlowLayout.swift in Sources */,
@@ -1578,12 +1615,14 @@
 				4D20B8B42068795D000FB9C4 /* SionViewController.swift in Sources */,
 				4D58879A21D5F68900D3E227 /* XYYPracticeViewController.swift in Sources */,
 				4D71186720B502E600348912 /* UIImagePickerController+Rx.swift in Sources */,
+				4DD7E7D823C41BFC00B81625 /* MoyaConfig.swift in Sources */,
 				4DEFFA0720ECBB1200362AFA /* UIViewController+DismissKeyboard.m in Sources */,
 				4DFA157320F62D9100A81504 /* ViedoTableViewCell.swift in Sources */,
 				4D42A37020FDDFA500404867 /* EZPlayerAVAssetResourceLoaderDelegate.swift in Sources */,
 				4D50A13321AE2A0B0057A421 /* R.generated.swift in Sources */,
 				4D42A37D20FDDFA500404867 /* EZPlayerThumbnail.swift in Sources */,
 				4DB12E5520A29D0400789D45 /* RecommendCell.swift in Sources */,
+				4DD7E7D723C41BFC00B81625 /* API.swift in Sources */,
 				4DB12E5D20A2C22900789D45 /* RecommendFooterView.swift in Sources */,
 				4DEFFA2120ECBB1200362AFA /* EaseBubbleView+Video.m in Sources */,
 				4DEFF9FB20ECBB1200362AFA /* amrFileCodec.mm in Sources */,
@@ -1622,6 +1661,7 @@
 				4DEFFA0B20ECBB1200362AFA /* EaseMessageReadManager.m in Sources */,
 				4DEFFA2620ECBB1200362AFA /* EaseImageView.m in Sources */,
 				4DEFFA1F20ECBB1200362AFA /* EaseBubbleView+Location.m in Sources */,
+				4DD7E7D423C41BFC00B81625 /* DryLocation.swift in Sources */,
 				4DEFFA0D20ECBB1200362AFA /* EaseEmojiEmoticons.m in Sources */,
 				4DEFF9F820ECBB1200362AFA /* EMCDDeviceManager+ProximitySensor.m in Sources */,
 				4D9AA14A2069DDBA00674E50 /* NetWorkTool.swift in Sources */,
